@@ -20,6 +20,13 @@ public class ContaBanco {
         cliente.saldo = scanner.nextDouble();
 
         cliente.apresentarCliente();
+
+        System.out.println("Digite o valor que deseja sacar: ");
+        double valorSaque = scanner.nextDouble();
+
+        cliente.Saque(valorSaque);
+
+        System.out.println("Saldo atualizado: " + cliente.saldo);
     }
         
        
